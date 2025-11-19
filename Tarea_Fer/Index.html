@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=templates/index.html">
+    <title>Proyecto APIs - Redirigiendo...</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .loader {
+            font-size: 2em;
+        }
+        .spinner {
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top: 5px solid #667eea;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <h1>🌐 Cargando Proyecto APIs...</h1>
+        <div class="spinner"></div>
+        <p>Redirigiendo a la página principal...</p>
+    </div>
+    <script>
+        // Redirección inmediata por JavaScript (por si el meta refresh falla)
+        window.location.href = 'templates/index.html';
+    </script>
+</body>
+</html>

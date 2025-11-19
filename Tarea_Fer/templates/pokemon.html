@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Pokémon</title>
+    <link rel="stylesheet" href="../statics/css/styles.css">
+</head>
+<body>
+    <div class="container api-page">
+        <header>
+            <h1>⚡ PokéDex Virtual</h1>
+            <p>Busca información sobre cualquier Pokémon</p>
+        </header>
+
+        <div class="nav-buttons">
+            <button class="btn btn-home" onclick="location.href='index.html'">🏠 Inicio</button>
+        </div>
+
+        <div class="search-section">
+            <h2>Buscar Pokémon</h2>
+            <div class="search-box">
+                <input type="text" id="pokemonInput" placeholder="Ej: pikachu, charizard, mewtwo o número (1-1000)">
+                <button class="btn" onclick="buscarPokemon()">Buscar</button>
+            </div>
+            <p style="text-align: center; opacity: 0.7; margin-top: 10px;">
+                💡 Tip: Puedes buscar por nombre o número de Pokémon
+            </p>
+        </div>
+
+        <div id="resultado"></div>
+
+        <footer>
+            <p>&copy; 2025 PokéDex - PokéAPI</p>
+        </footer>
+    </div>
+
+    <script src="../js/pokemon.js"></script>
+</body>
+</html>
