@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto APIs - Página Principal</title>
+    <link rel="stylesheet" href="../statics/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌐 Proyecto de APIs Interactivas</h1>
+            <p>Explora diferentes APIs y descubre información fascinante en tiempo real</p>
+        </header>
+
+        <!-- Sección de Bienvenida -->
+        <div class="welcome-section" id="welcomeSection">
+            <h2>¡Bienvenido!</h2>
+            <div class="input-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+            </div>
+            <div class="input-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" placeholder="Ingresa tu apellido">
+            </div>
+            <button class="btn btn-primary" onclick="saludar()">Ingresar</button>
+            
+            <div id="userGreeting" class="user-greeting" style="display: none;">
+                <h3>¡Bienvenido, <span id="userName"></span>!</h3>
+                <p>Selecciona una API para explorar</p>
+            </div>
+        </div>
+
+        <!-- Grid de Botones de APIs -->
+        <div class="buttons-grid">
+            <div class="api-button" onclick="location.href='clima.html'">
+                <h3>☁️ API del Clima</h3>
+                <p>Consulta el clima de cualquier ciudad del mundo</p>
+                <button class="btn">Explorar Clima</button>
+            </div>
+
+            <div class="api-button" onclick="location.href='paises.html'">
+                <h3>🌍 API de Países</h3>
+                <p>Descubre información de países alrededor del mundo</p>
+                <button class="btn">Ver Países</button>
+            </div>
+
+            <div class="api-button" onclick="location.href='pokemon.html'">
+                <h3>⚡ API de Pokémon</h3>
+                <p>Busca información sobre tus Pokémon favoritos</p>
+                <button class="btn">Buscar Pokémon</button>
+            </div>
+
+            <div class="api-button" onclick="location.href='rick.html'">
+                <h3>🛸 API Rick & Morty</h3>
+                <p>Explora los personajes de Rick y Morty</p>
+                <button class="btn">Ver Personajes</button>
+            </div>
+
+            <div class="api-button" onclick="location.href='cripto.html'">
+                <h3>💰 API de Criptomonedas</h3>
+                <p>Consulta precios de criptomonedas en tiempo real</p>
+                <button class="btn">Ver Cripto</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Proyecto APIs - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+    <script src="../js/script_bienvenida.js"></script>
+</body>
+</html>
